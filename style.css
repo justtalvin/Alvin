@@ -4,19 +4,148 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+.container{
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
-}
-.container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formcard{
+    width: 400px;
+    height: 550px;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 10px;
+}
+form{
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
 }
-/* .container div{
-    border: 1px solid gray;
-} */
-
-
+.sign-up{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    position: relative;
+}
+.sign-up p{
+    color: rgb(165, 164, 164);
+    font-size: 17px;
+}
+.sign-up img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+.personal-det{
+    width: 100%;
+    /* height: 200px; */
+    padding-top: 10px;
+}
+.name-tab{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-inputs{
+    height: 42px;
+    font-size: 16px;
+    padding-left: 10px;
+    background: #F5F6F8;
+    border: 2px solid #E5E6E8;
+    border-radius: 5px;
+    color: #8D9799;
+    outline: none;
+    opacity: .8;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.name-inputs{
+    width: 48%;
+}
+.dob-sec{
+    width: 100%;
+    padding-top: 3px;
+}
+.dob-sec p{
+    font-size: 15px;
+    color: #6d7172;
+    margin-bottom: 2px;
+}
+.dob-inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.dob-inputs select{
+    width: 32%;
+    border: 1px solid #c7c8c9;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.gender{
+    padding-top: 10px;
+}
+.gender p{
+    font-size: 15px;
+    color: #6d7172;
+    margin-bottom: 2px;
+}
+.gender-inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.gender-inputs div{
+    border: 1px solid #c7c8c9;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 8px;
+    width: 32%;
+}
+.female-opt, .male-opt, .custom-opt{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+}
+.terms{
+    padding-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.terms a{
+    text-decoration: none;
+    color: #0a5999;
+}
+.terms p{
+    font-size: 13px;
+}
+.policy{
+    margin-top: 10px;
+}
+.button{
+    width: 200px;
+    text-align: center;
+    background: #00A400;
+    font-weight: 700;
+    border-radius: 9px;
+    margin: auto;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+#female, #male, #custom{
+    cursor: pointer;
+}
+i{
+    opacity: .8;
+}
